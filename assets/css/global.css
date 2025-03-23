@@ -1,0 +1,42 @@
+/* Include Tailwind directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Now you can use layers */
+@layer base {
+    /* Set the background color for the entire page */
+    body {
+        @apply bg-background text-white;
+    }
+
+    /* Heading styles with EXACT sizes as requested */
+    h1 {
+        @apply font-medium text-white text-[80px];
+    }
+
+    h2 {
+        @apply font-medium text-white text-[64px];
+    }
+
+    h3 {
+        @apply font-medium text-white text-[48px];
+    }
+
+    h4 {
+        @apply font-medium text-white text-[36px];
+    }
+
+    h5 {
+        @apply font-medium text-white text-[24px];
+    }
+
+    h6 {
+        @apply font-medium text-white text-[20px];
+    }
+
+    /* Paragraph styles - 16px and gray color */
+    p {
+        @apply text-[16px] text-paragraph;
+    }
+}

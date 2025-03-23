@@ -3,8 +3,9 @@ export default defineNuxtConfig({
     compatibilityDate: '2025-03-23',
     devtools: {enabled: true},
     modules: [
-        '@nuxt/eslint',
-        '@nuxtjs/tailwindcss',
+      '@nuxt/eslint',
+      '@nuxtjs/tailwindcss',
+      'nuxt-svgo-loader'
     ],
     css: [
         '~/assets/css/fonts.css',

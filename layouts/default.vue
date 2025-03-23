@@ -1,15 +1,16 @@
 <template>
   <div>
-    <header>
-      <!-- Navigation goes here -->
-    </header>
+    <Header />
 
-    <main>
+    <main class="z-10 overflow-x-hidden min-h-[1800px]">
       <slot />
     </main>
 
-    <footer>
-      <!-- Footer content -->
-    </footer>
+    <Footer />
   </div>
 </template>
+
+<script setup>
+import Header from '~/components/Header.vue'
+import Footer from '~/components/Footer.vue'
+</script>

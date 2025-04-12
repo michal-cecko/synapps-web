@@ -7,36 +7,71 @@
 @layer base {
     /* Set the background color for the entire page */
     body {
-        @apply bg-background text-white;
+        @apply bg-background text-white text-left;
     }
 
-    /* Heading styles with EXACT sizes as requested */
     h1 {
-        @apply font-medium text-white text-[80px];
+        @apply font-medium text-white text-[80px] text-left leading-[1.2];
+    }
+
+    @media (max-width: 768px) {
+        h1 {
+            @apply text-[56px];
+        }
     }
 
     h2 {
-        @apply font-medium text-white text-[64px];
+        @apply font-medium text-white text-[64px] text-left leading-[1.2];
+    }
+
+    @media (max-width: 768px) {
+        h2 {
+            @apply text-[40px];
+        }
     }
 
     h3 {
-        @apply font-medium text-white text-[48px];
+        @apply font-medium text-white text-[48px] text-left leading-[1.2];
+    }
+
+    @media (max-width: 768px) {
+        h3 {
+            @apply text-[32px];
+        }
     }
 
     h4 {
-        @apply font-medium text-white text-[36px];
+        @apply font-medium text-white text-[36px] text-left leading-[1.2];
+    }
+
+    @media (max-width: 768px) {
+        h4 {
+            @apply text-[24px];
+        }
     }
 
     h5 {
-        @apply font-medium text-white text-[24px];
+        @apply font-medium text-white text-[24px] text-left leading-[1.2];
+    }
+
+    @media (max-width: 768px) {
+        h5 {
+            @apply text-[18px];
+        }
     }
 
     h6 {
-        @apply font-medium text-white text-[20px];
+        @apply font-medium text-white text-[20px] text-left leading-[1.2];
+    }
+
+    @media (max-width: 768px) {
+        h6 {
+            @apply text-[16px];
+        }
     }
 
     /* Paragraph styles - 16px and gray color */
     p {
-        @apply text-[16px] text-paragraph;
+        @apply md:text-[16px] text-[18px] text-paragraph text-left leading-[1.5];
     }
 }

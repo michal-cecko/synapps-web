@@ -1,8 +1,8 @@
 <template>
-  <div>
+  <div class=" overflow-x-hidden min-h-[1800px]">
     <Header />
 
-    <main class="z-10 overflow-x-hidden min-h-[1800px]">
+    <main class="z-10">
       <slot />
     </main>
 

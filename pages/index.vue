@@ -176,8 +176,10 @@ let typedInstance = null
 onMounted(() => {
   typedInstance = new Typed(typingElement.value, {
     strings: [
-      '<span class="text-primary-yellow">Digitalizuje<br>procesy</span>',
-      '<span class="text-primary-orange">Automatizuje<br>všeličo</span>'
+      '<span class="text-primary-orange">Moderná<br>webstránká</span>',
+      '<span class="text-primary-yellow">Prehľadný<br>systém</span>',
+      '<span class="text-primary-orange">Mobilná<br>aplikácia</span>',
+      '<span class="text-primary-yellow">Automatizácia<br>procesov</span>',
     ],
     typeSpeed: 70,
     backSpeed: 50,

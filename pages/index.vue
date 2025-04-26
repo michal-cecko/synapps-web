@@ -27,7 +27,7 @@
 
       <p class="md:absolute md:bottom-3 md:left-0 md:max-w-[380px] md:pb-10 md:mt-0 mt-[26vh]"
          data-aos="fade-up" data-aos-delay="300">
-        Pomáhame ľuďom automatizovať procesy v práci a zviditeľnovať ich identitu na webe
+        Pomáhame firmám aj jednotlivcom zefektívniť prácu pomocou moderných digitálnych riešení.
       </p>
 
       <ArrowIcon class="scroll-hint-arrow md:absolute md:bottom-[30px] md:right-0 md:-translate-y-1/2 mx-auto md:mt-0 mt-10"
@@ -40,7 +40,7 @@
     <div class="absolute -mt-[10rem]" id="onas"></div>
 
     <div class="container h-full mx-auto px-lg-0 px-4 z-10 relative">
-      <div class="h-full flex flex-col md:flex-row gap-[9rem] lg:gap-[5rem]">
+      <div class="h-full flex flex-col md:flex-row justify-between gap-[9rem] lg:gap-[5rem]">
         <!-- Left Column - About text -->
         <div class="w-full md:w-1/2 flex-col flex items-start justify-center max-w-[500px]" data-aos="fade-up">
           <h4>Vývoj aplikácii, webov a&nbsp;systémov</h4>
@@ -65,15 +65,15 @@
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full h-auto">
         <!-- Left column - three smaller elements -->
         <div class="space-y-4 flex flex-col h-full">
-          <NuxtLink to="/projekty/dodoworkout" class="w-full h-auto relative group" data-aos="fade-up" data-aos-delay="100">
-            <div class="pointer-events-none absolute top-0 left-0 z-10 bg-[rgba(15,15,15,0.75)] w-full h-full flex flex-col justify-end p-8 gap-4 opacity-0 group-hover:opacity-100 transition-all duration-400 ease-in-out">
+          <NuxtLink to="https://dodoworkout.com/" target="_blank" class="w-full h-auto relative group" data-aos="fade-up" data-aos-delay="100">
+            <div class="pointer-events-none absolute top-0 left-0 z-10 bg-[rgba(15,15,15,0.65)] w-full h-full flex flex-col justify-end p-8 gap-4 opacity-0 group-hover:opacity-100 transition-all duration-400 ease-in-out">
               <h5 class="transition-all duration-400 ease-in-out transform translate-y-4 group-hover:translate-y-0">Dodoworkout</h5>
               <p class="text-[#C9C9C9] transition-all duration-400 ease-in-out transform translate-y-4 group-hover:translate-y-0">Web pre trénera</p>
             </div>
             <img class="z-0" src="@/public/images/homepage/project-cards/dodoworkout.jpg" alt="Eshop">
           </NuxtLink>
-          <NuxtLink to="/projekty/streetworkoutkysuce" class="w-full h-auto relative group" data-aos="fade-up" data-aos-delay="200">
-            <div class="pointer-events-none absolute top-0 left-0 z-10 bg-[rgba(15,15,15,0.75)] w-full h-full flex flex-col justify-end p-8 gap-4 opacity-0 group-hover:opacity-100 transition-all duration-400 ease-in-out">
+          <NuxtLink to="https://streetworkoutkysuce.sk/" target="_blank" class="w-full h-auto relative group" data-aos="fade-up" data-aos-delay="200">
+            <div class="pointer-events-none absolute top-0 left-0 z-10 bg-[rgba(15,15,15,0.65)] w-full h-full flex flex-col justify-end p-8 gap-4 opacity-0 group-hover:opacity-100 transition-all duration-400 ease-in-out">
               <h5 class="transition-all duration-400 ease-in-out transform translate-y-4 group-hover:translate-y-0">Street Workout Kysuce</h5>
               <p class="text-[#C9C9C9] transition-all duration-400 ease-in-out transform translate-y-4 group-hover:translate-y-0">Web športového tímu</p>
             </div>
@@ -89,15 +89,15 @@
         </div>
         <!-- Right column - two bigger elements -->
         <div class="flex flex-col space-y-4 h-full">
-          <NuxtLink to="/projekty/dashboard" class="w-full h-auto relative flex-1 group" data-aos="fade-up" data-aos-delay="150">
-            <div class="pointer-events-none absolute top-0 left-0 z-10 bg-[rgba(15,15,15,0.75)] w-full h-full flex flex-col justify-end p-8 gap-4 opacity-0 group-hover:opacity-100 transition-all duration-400 ease-in-out">
+          <NuxtLink to="https://demo.filamentphp.com/" target="_blank" class="w-full h-auto relative flex-1 group" data-aos="fade-up" data-aos-delay="150">
+            <div class="pointer-events-none absolute top-0 left-0 z-10 bg-[rgba(15,15,15,0.65)] w-full h-full flex flex-col justify-end p-8 gap-4 opacity-0 group-hover:opacity-100 transition-all duration-400 ease-in-out">
               <h5 class="transition-all duration-400 ease-in-out transform translate-y-4 group-hover:translate-y-0">Dashboard</h5>
               <p class="text-[#C9C9C9] transition-all duration-400 ease-in-out transform translate-y-4 group-hover:translate-y-0">Informačný systém na správu internetového obchodu</p>
             </div>
             <img src="@/public/images/homepage/project-cards/dashboard.jpg" alt="Admin Dashboard">
           </NuxtLink>
-          <NuxtLink to="/projekty/trimbarbers" class="w-full h-auto relative flex-1 group" data-aos="fade-up" data-aos-delay="250">
-            <div class="pointer-events-none absolute top-0 left-0 z-10 bg-[rgba(15,15,15,0.75)] w-full h-full flex flex-col justify-end p-8 gap-4 opacity-0 group-hover:opacity-100 transition-all duration-400 ease-in-out">
+          <NuxtLink to="https://trimbarbers.sk" target="_blank" class="w-full h-auto relative flex-1 group" data-aos="fade-up" data-aos-delay="250">
+            <div class="pointer-events-none absolute top-0 left-0 z-10 bg-[rgba(15,15,15,0.65)] w-full h-full flex flex-col justify-end p-8 gap-4 opacity-0 group-hover:opacity-100 transition-all duration-400 ease-in-out">
               <h5 class="transition-all duration-400 ease-in-out transform translate-y-4 group-hover:translate-y-0">3M Barbers</h5>
               <p class="text-[#C9C9C9] transition-all duration-400 ease-in-out transform translate-y-4 group-hover:translate-y-0">Web s rezervačným systémom pre barbershop</p>
             </div>
@@ -176,7 +176,7 @@ let typedInstance = null
 onMounted(() => {
   typedInstance = new Typed(typingElement.value, {
     strings: [
-      '<span class="text-primary-orange">Moderná<br>webstránká</span>',
+      '<span class="text-primary-orange">Moderná<br>webstránka</span>',
       '<span class="text-primary-yellow">Prehľadný<br>systém</span>',
       '<span class="text-primary-orange">Mobilná<br>aplikácia</span>',
       '<span class="text-primary-yellow">Automatizácia<br>procesov</span>',

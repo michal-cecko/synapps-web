@@ -40,7 +40,7 @@
         </ul>
       </nav>
       <!-- Social Icons -->
-      <div class="social-icons flex space-x-6 mt-16" data-aos="fade-up" data-aos-delay="400">
+<!--      <div class="social-icons flex space-x-6 mt-16" data-aos="fade-up" data-aos-delay="400">
         <a href="https://facebook.com" target="_blank" rel="noopener" class="social-icon">
           <FacebookIcon
               class="w-6 h-6 fill-current text-white hover:text-primary-yellow transition-colors duration-300"/>
@@ -53,7 +53,7 @@
           <LinkedinIcon
               class="w-6 h-6 fill-current text-white hover:text-primary-yellow transition-colors duration-300"/>
         </a>
-      </div>
+      </div>-->
     </div>
 
     <div class="container-wrapper" :class="{ 'scrolled': isScrolled }">
@@ -61,7 +61,10 @@
         <header class="flex justify-between items-center px-4 px-sm-0 py-4 relative transition-all duration-300">
           <!-- Logo -->
           <NuxtLink to="/" data-aos="fade-down">
-            <Logo class="w-sm-[64px] w-[48px] h-auto"/>
+            <div class="flex gap-4 items-center mb-6">
+              <Logo class="w-sm-[64px] w-[48px] h-auto"/>
+              <h5>Synapps</h5>
+            </div>
           </NuxtLink>
           <!-- Empty div to maintain the space where the menu button would be -->
           <div class="w-[36px]"></div>

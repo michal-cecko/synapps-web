@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  myapp:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: synapps-nuxt
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.myapp.rule=Host(`synapps.sk`)"
+      - "traefik.http.routers.myapp.entrypoints=websecure"
+      - "traefik.http.routers.myapp.tls.certresolver=myresolver"
+    networks:
+      - web
+    expose:
+      - "3000" # Important: expose internal app port
+
+networks:
+  web:
+    external: true

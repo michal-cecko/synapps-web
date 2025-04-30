@@ -61,7 +61,7 @@
         <header class="flex justify-between items-center px-4 px-sm-0 py-4 relative transition-all duration-300">
           <!-- Logo -->
           <NuxtLink to="/" data-aos="fade-down">
-            <div class="flex gap-4 items-center mb-6">
+            <div class="flex gap-4 items-center">
               <Logo class="w-sm-[64px] w-[48px] h-auto"/>
               <h5>Synapps</h5>
             </div>

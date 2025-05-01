@@ -10,6 +10,8 @@ services:
       - "traefik.http.routers.myapp.entrypoints=websecure"
       - "traefik.http.routers.myapp.tls.certresolver=myresolver"
       - "traefik.http.services.myapp.loadbalancer.server.port=3000"
+      - "traefik.http.routers.myapp-http.rule=Host(`synapps.sk`)"
+      - "traefik.http.routers.myapp-http.entrypoints=web"
     networks:
       - web
     expose:

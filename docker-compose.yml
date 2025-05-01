@@ -9,10 +9,11 @@ services:
       - "traefik.http.routers.myapp.rule=Host(`synapps.sk`)"
       - "traefik.http.routers.myapp.entrypoints=websecure"
       - "traefik.http.routers.myapp.tls.certresolver=myresolver"
+      - "traefik.http.services.myapp.loadbalancer.server.port=3000"
     networks:
       - web
     expose:
-      - "3000" # Important: expose internal app port
+      - "3000"
 
 networks:
   web:

@@ -12,7 +12,8 @@ services:
       - "traefik.http.services.myapp.loadbalancer.server.port=3000"
       - "traefik.http.routers.myapp-http.rule=Host(`synapps.sk`)"
       - "traefik.http.routers.myapp-http.entrypoints=web"
-      - "traefik.http.routers.myapp-http.middlewares=traefik-redirect-to-https"
+      - "traefik.http.middlewares.redirect-to-https.redirectscheme.scheme=https"
+      - "traefik.http.routers.myapp-http.middlewares=redirect-to-https"
     networks:
       - web
     expose:

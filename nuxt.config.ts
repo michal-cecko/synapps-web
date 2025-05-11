@@ -2,7 +2,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
     compatibilityDate: '2025-03-23',
-    devtools: {enabled: true},
+    devtools: {
+        enabled: true
+    },
     modules: [
         '@nuxt/eslint',
         '@nuxtjs/tailwindcss',
@@ -14,6 +16,7 @@ export default defineNuxtConfig({
     ],
     plugins: [
         {src: '~/plugins/aos.client.js', mode: 'client'},
+        {src: '~/plugins/gtag.js'},
     ],
     app: {
         head: {
@@ -71,6 +74,7 @@ export default defineNuxtConfig({
                     content: '/images/og-image.jpg'
                 }
             ],
+            script: [],
             link: [
                 {
                     rel: 'canonical',

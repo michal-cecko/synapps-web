@@ -1,3 +1,4 @@
+
 services:
   myapp:
     build:
@@ -6,17 +7,26 @@ services:
     container_name: synapps-nuxt
     labels:
       - "traefik.enable=true"
+      # HTTPS router
       - "traefik.http.routers.myapp.rule=Host(`synapps.sk`)"
       - "traefik.http.routers.myapp.entrypoints=websecure"
       - "traefik.http.routers.myapp.tls.certresolver=myresolver"
       - "traefik.http.services.myapp.loadbalancer.server.port=3000"
+      # HTTP redirect router
       - "traefik.http.routers.myapp-http.rule=Host(`synapps.sk`)"
       - "traefik.http.routers.myapp-http.entrypoints=web"
       - "traefik.http.routers.myapp-http.middlewares=redirect-to-https"
+      # Security headers middleware (optional but recommended)
+      - "traefik.http.routers.myapp.middlewares=security-headers"
+      - "traefik.http.middlewares.security-headers.headers.customRequestHeaders.X-Forwarded-Proto=https"
+      - "traefik.http.middlewares.security-headers.headers.customRequestHeaders.X-Forwarded-For="
     networks:
       - web
     expose:
       - "3000"
+    environment:
+      - NODE_ENV=production
+    restart: unless-stopped
 
 networks:
   web:

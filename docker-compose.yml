@@ -1,4 +1,3 @@
-
 services:
   myapp:
     build:
@@ -16,6 +15,9 @@ services:
       - "traefik.http.routers.myapp-http.rule=Host(`synapps.sk`)"
       - "traefik.http.routers.myapp-http.entrypoints=web"
       - "traefik.http.routers.myapp-http.middlewares=redirect-to-https"
+      # Define the redirect middleware (ADD THESE TWO LINES)
+      - "traefik.http.middlewares.redirect-to-https.redirectscheme.scheme=https"
+      - "traefik.http.middlewares.redirect-to-https.redirectscheme.permanent=true"
       # Security headers middleware (optional but recommended)
       - "traefik.http.routers.myapp.middlewares=security-headers"
       - "traefik.http.middlewares.security-headers.headers.customRequestHeaders.X-Forwarded-Proto=https"

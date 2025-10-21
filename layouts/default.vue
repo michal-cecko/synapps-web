@@ -1,5 +1,5 @@
 <template>
-  <div class=" overflow-x-hidden min-h-[1800px]">
+  <div class=" overflow-hidden min-h-[1800px]">
     <Header />
 
     <main class="z-10">

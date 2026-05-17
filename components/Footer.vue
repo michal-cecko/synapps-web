@@ -30,6 +30,9 @@
         </div>-->
       </div>
     </div>
+    <div class="container mx-auto px-8 pt-4 pb-2 text-paragraph text-sm opacity-70">
+      Vyrobil <a href="https://cecko.dev" target="_blank" rel="noopener" class="underline">Michal Čečko</a>
+    </div>
   </footer>
 </template>
 

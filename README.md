@@ -1,75 +1,60 @@
-# Nuxt Minimal Starter
+# synapps.sk
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Marketing site for **Synapps s.r.o.** — Slovak software studio building web apps, internal tools and mobile solutions on commission.
 
-## Setup
+Live at **[synapps.sk](https://synapps.sk)**.
 
-Make sure to install dependencies:
+## Stack
+
+- **Nuxt 3** + **Vue 3**
+- **Tailwind CSS** (via `@nuxtjs/tailwindcss`)
+- **AOS** for scroll-triggered animations
+- **typed.js** for the rotating hero headline
+- **vue-gtag** for Google Analytics
+- **nuxt-svgo-loader** for inline SVGs
+- ESLint via `@nuxt/eslint`
+- Slovak UI (`lang="sk"`)
+
+## Layout
+
+```
+├── app.vue                   # root, mounts <NuxtLayout><NuxtPage/></NuxtLayout>
+├── pages/
+│   ├── index.vue             # homepage
+│   └── Projekty/             # /projekty (case studies)
+├── components/
+│   ├── Header.vue
+│   └── Footer.vue
+├── data/
+│   └── projects.js           # case-study content
+├── assets/css/               # fonts.css + global.css
+├── plugins/
+│   ├── aos.client.js         # AOS init (client-only)
+│   └── gtag.js               # analytics
+└── nuxt.config.ts
+```
+
+## Local dev
 
 ```bash
-# npm
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
+npm run dev                   # http://localhost:3000
 ```
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
+## Build
 
 ```bash
-# npm
-npm run dev
+npm run build                 # SSR build
+npm run preview               # preview the production build locally
 
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
+# OR for static export:
+npm run generate              # output in .output/public/
 ```
 
-## Production
+## Deploy
 
-Build the application for production:
+Dockerised via `docker-compose.override.yml`. Deployed to a Dokploy host.
 
-```bash
-# npm
-npm run build
+## License
 
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+[MIT](LICENSE) © Michal Čečko
